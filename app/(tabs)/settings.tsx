@@ -5,7 +5,7 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 // This makes the third-party Safe Area View compatible with Tailwind classes
 const StyledSafeAreaView = styled(RNSafeAreaView);
 
-const settings = () => {
+const Settings = () => {
   return (
     <StyledSafeAreaView className="flex-1 bg-[#F2F2F2]">
       <View>
@@ -15,4 +15,4 @@ const settings = () => {
   );
 };
 
-export default settings;
+export default Settings;
