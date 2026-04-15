@@ -9,7 +9,6 @@ import "@/global.css";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  // Loading fonts as shown at [01:31:45]
   const [fontsLoaded] = useFonts({
     "sans-serif": require("@/assets/fonts/PlusJakartaSans-Regular.ttf"),
     "sans-serif-bold": require("@/assets/fonts/PlusJakartaSans-Bold.ttf"),
