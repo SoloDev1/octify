@@ -1,7 +1,7 @@
-import { Stack } from "expo-router";
+import { Stack, SplashScreen } from "expo-router";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
+
 import { useEffect } from "react";
 import "@/global.css";
 
@@ -11,8 +11,11 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   // Loading fonts as shown at [01:31:45]
   const [fontsLoaded] = useFonts({
-    "Jakarta-Bold": require("../assets/fonts/PlusJakartaSans-Bold.ttf"),
-    "Jakarta-Regular": require("../assets/fonts/PlusJakartaSans-Regular.ttf"),
+    "sans-serif": require("@/assets/fonts/PlusJakartaSans-Regular.ttf"),
+    "sans-serif-bold": require("@/assets/fonts/PlusJakartaSans-Bold.ttf"),
+    "sans-serif-ExtraBold": require("@/assets/fonts/PlusJakartaSans-ExtraBold.ttf"),
+    "sans-serif-SemiBold": require("@/assets/fonts/PlusJakartaSans-SemiBold.ttf"),
+    "sans-serif-Light": require("@/assets/fonts/PlusJakartaSans-Light.ttf"),
   });
 
   useEffect(() => {
